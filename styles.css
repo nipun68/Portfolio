@@ -3254,3 +3254,392 @@
 #intro-thumb-lighting {
     opacity: 0.1 !important;
 }
+
+
+
+/* ==========================================================================
+   COMPREHENSIVE RESPONSIVE DESIGN (MOBILE & TABLET BREAKPOINTS)
+   Supports 320px - 767px (Mobile) and 768px - 1024px (Tablet)
+   ========================================================================== */
+
+/* --- 1. GLOBAL NAVIGATION & HUD (MOBILE) --- */
+@media (max-width: 767px) {
+    #main-nav-container {
+        bottom: 14px !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    #main-nav {
+        max-width: 95vw !important;
+        padding: 4px 6px !important;
+        border-width: 2.5px !important;
+        box-shadow: 3px 3px 0 #0A0A1A !important;
+        gap: 2px !important;
+    }
+    #main-nav .nav-item {
+        padding: 5px 7px !important;
+        font-size: 11px !important;
+        line-height: 1.1 !important;
+        letter-spacing: -0.01em !important;
+    }
+    #top-ribbon {
+        height: 36px !important;
+        font-size: 10px !important;
+    }
+    #top-ribbon > div:first-child {
+        padding: 0 10px !important;
+        font-size: 11px !important;
+    }
+    #hinglish-phrase {
+        font-size: 10px !important;
+    }
+    #top-ribbon > div:nth-child(3) {
+        display: none !important;
+    }
+}
+
+/* --- GLOBAL NAVIGATION & HUD (TABLET) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #main-nav-container {
+        bottom: 22px !important;
+    }
+    #main-nav {
+        max-width: 90vw !important;
+        padding: 6px 12px !important;
+    }
+    #main-nav .nav-item {
+        padding: 8px 14px !important;
+        font-size: 13px !important;
+    }
+    #top-ribbon > div:nth-child(3) {
+        width: 180px !important;
+    }
+}
+
+/* --- 2. SECTION 01: HERO SECTION (MOBILE) --- */
+@media (max-width: 767px) {
+    #hero {
+        padding: 0 12px !important;
+    }
+    #hero-text-3d {
+        font-size: clamp(85px, 22vw, 140px) !important;
+        transform: rotate(-4deg) scale(0.9) translateY(-15px) !important;
+    }
+    #hero-badges {
+        top: 52px !important;
+        left: 12px !important;
+        transform: scale(0.8) !important;
+        transform-origin: top left !important;
+        z-index: 50 !important;
+    }
+    #hero-quote-block {
+        top: 52px !important;
+        right: 12px !important;
+        max-width: 180px !important;
+        transform: scale(0.8) !important;
+        transform-origin: top right !important;
+        z-index: 50 !important;
+    }
+    #hero-quote-block svg {
+        width: 85px !important;
+        height: 38px !important;
+    }
+    #hero-roles-block {
+        bottom: 70px !important;
+        left: 12px !important;
+        transform: scale(0.78) !important;
+        transform-origin: bottom left !important;
+        gap: 8px !important;
+        z-index: 50 !important;
+    }
+    #hero-roles-block span[aria-hidden="true"] {
+        font-size: 10px !important;
+    }
+    #hero-roles-block span:not([aria-hidden]) {
+        font-size: 15px !important;
+    }
+    #sound-toggle {
+        bottom: 70px !important;
+        right: 12px !important;
+        width: 38px !important;
+        height: 38px !important;
+        z-index: 50 !important;
+    }
+    #sound-toggle svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .hero-overlay-text.bottom-16, 
+    .hero-overlay-text.bottom-20,
+    .hero-overlay-text.md\:bottom-48 {
+        bottom: 70px !important;
+        transform: translateX(-50%) scale(0.8) !important;
+    }
+}
+
+/* --- SECTION 01: HERO SECTION (TABLET) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #hero-text-3d {
+        font-size: clamp(140px, 24vw, 220px) !important;
+        transform: rotate(-4deg) scale(0.95) translateY(-30px) !important;
+    }
+    #hero-badges {
+        top: 65px !important;
+        left: 24px !important;
+    }
+    #hero-quote-block {
+        top: 65px !important;
+        right: 24px !important;
+    }
+    #hero-roles-block {
+        bottom: 95px !important;
+        left: 24px !important;
+        transform: scale(0.9) !important;
+    }
+    #sound-toggle {
+        bottom: 95px !important;
+        right: 24px !important;
+    }
+    .hero-overlay-text.md\:bottom-48 {
+        bottom: 95px !important;
+    }
+}
+
+/* --- 3. SECTION 02: ORIGIN / DIARY (MOBILE) --- */
+@media (max-width: 767px) {
+    #book-container {
+        transform: scale(0.64) !important;
+        transform-origin: center top !important;
+        margin-top: 15px !important;
+        max-width: 98vw !important;
+    }
+    #origin-headline {
+        font-size: 18px !important;
+        line-height: 1.15 !important;
+        top: 2% !important;
+        left: 4% !important;
+    }
+    #origin-headline span {
+        font-size: inherit !important;
+    }
+    #origin-micro-story {
+        top: 38% !important;
+        font-size: 8.5px !important;
+        line-height: 1.35 !important;
+        width: 82% !important;
+    }
+    #art-polaroid {
+        transform: scale(0.7) rotate(3deg) !important;
+        bottom: 8% !important;
+        right: -8px !important;
+    }
+    #event-stickers {
+        display: none !important;
+    }
+}
+
+/* --- SECTION 02: ORIGIN / DIARY (TABLET) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #book-container {
+        transform: scale(0.82) !important;
+        transform-origin: center center !important;
+    }
+    #origin-headline {
+        font-size: 24px !important;
+        line-height: 1.15 !important;
+    }
+    #origin-micro-story {
+        font-size: 10px !important;
+    }
+}
+
+/* --- 4. SECTION 03: PROJECTS / STACK (MOBILE) --- */
+@media (max-width: 767px) {
+    #stack-container {
+        padding: 30px 10px 100px !important;
+    }
+    #stack-area {
+        height: auto !important;
+        min-height: 540px !important;
+        width: 100% !important;
+    }
+    .stack-card {
+        width: 94vw !important;
+        max-width: 370px !important;
+        padding: 12px 14px !important;
+    }
+    .stack-card .card-company {
+        font-size: 15px !important;
+    }
+    .stack-card .card-role {
+        font-size: 12px !important;
+    }
+    .stack-card .card-desc {
+        font-size: 11px !important;
+        line-height: 1.35 !important;
+    }
+    .stack-card .card-expand {
+        max-height: 550px !important;
+    }
+    #stack-title-box {
+        transform: scale(0.7) !important;
+        transform-origin: top left !important;
+    }
+}
+
+/* --- SECTION 03: PROJECTS / STACK (TABLET) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .stack-card {
+        max-width: 680px !important;
+        width: 90vw !important;
+    }
+}
+
+/* --- 5. SECTION 04: DELHI METRO / BEST WORK (MOBILE) --- */
+@media (max-width: 767px) {
+    #fixed-route-board {
+        top: 50px !important;
+        right: 8px !important;
+        width: 94vw !important;
+        max-width: 350px !important;
+        height: 85px !important;
+        transform: rotate(-1.5deg) scale(0.82) !important;
+        transform-origin: top right !important;
+    }
+    #fixed-route-nodes .route-major .node-label {
+        font-size: 7.5px !important;
+        padding: 1px 2px !important;
+    }
+    #fixed-route-nodes .route-dummy .node-label {
+        font-size: 7.5px !important;
+    }
+    #fixed-route-nodes .route-dot {
+        width: 8px !important;
+        height: 8px !important;
+    }
+    
+    /* Billboard on mobile */
+    #transit-stations-container > div > div:nth-child(2) {
+        transform: translateY(-15px) scale(0.82) !important;
+        width: 94vw !important;
+        max-width: 350px !important;
+    }
+    #transit-stations-container .billboard-float {
+        font-size: 36px !important;
+        line-height: 0.9 !important;
+    }
+    .step-out-btn {
+        font-size: 9.5px !important;
+        padding: 3px 6px !important;
+        top: -10px !important;
+        left: -6px !important;
+    }
+    
+    /* Prev/Next Navigation arrows positioned safely */
+    #transit-prev-btn, #transit-next-btn {
+        width: 48px !important;
+        height: 48px !important;
+        box-shadow: 2.5px 2.5px 0 #0B0B0B !important;
+    }
+    #transit-prev-btn svg, #transit-next-btn svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    div:has(> #transit-prev-btn) {
+        left: 6px !important;
+        top: 62% !important;
+    }
+    div:has(> #transit-next-btn) {
+        right: 6px !important;
+        top: 62% !important;
+    }
+    
+    /* Section 04 Heading badge */
+    div.absolute:has(> .group > #vw-tilted-box) {
+        transform: scale(0.6) !important;
+        transform-origin: top left !important;
+        top: 50px !important;
+        left: 8px !important;
+    }
+    
+    /* Train carriage */
+    #transit-train {
+        height: 95px !important;
+    }
+    
+    /* Case study modal */
+    #transit-case-study-view {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        padding-top: 60px !important;
+    }
+}
+
+/* --- SECTION 04: DELHI METRO / BEST WORK (TABLET) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #fixed-route-board {
+        top: 68px !important;
+        right: 16px !important;
+        width: 58vw !important;
+        height: 110px !important;
+        transform: rotate(-1.5deg) scale(0.88) !important;
+    }
+    #transit-stations-container > div > div:nth-child(2) {
+        transform: translateY(-25px) scale(0.9) !important;
+    }
+    #transit-prev-btn, #transit-next-btn {
+        width: 65px !important;
+        height: 65px !important;
+    }
+    div:has(> #transit-prev-btn) {
+        left: 14px !important;
+    }
+    div:has(> #transit-next-btn) {
+        right: 14px !important;
+    }
+}
+
+/* --- 6. SECTION 05: VISUALS & SECTION 06: CONTACT (MOBILE) --- */
+@media (max-width: 767px) {
+    #gallery-sticky-wrap h2 {
+        font-size: clamp(42px, 14vw, 76px) !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+    }
+    #contact {
+        padding: 50px 14px 110px !important;
+        min-height: auto !important;
+    }
+    #contact h2 span {
+        font-size: clamp(48px, 16vw, 85px) !important;
+    }
+    #contact a[href^="mailto"] {
+        font-size: clamp(15px, 4.8vw, 22px) !important;
+        word-break: break-all !important;
+    }
+    #contact .contact-stagger {
+        width: 100% !important;
+    }
+    #site-footer {
+        padding: 35px 14px 110px !important;
+        gap: 20px !important;
+    }
+    #site-footer .font-\'Gloria_Hallelujah\' {
+        font-size: 32px !important;
+    }
+}
+
+/* --- SECTION 05 & 06 (TABLET) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #contact h2 span {
+        font-size: clamp(65px, 12vw, 110px) !important;
+    }
+    #contact a[href^="mailto"] {
+        font-size: clamp(22px, 3.8vw, 36px) !important;
+    }
+    #site-footer {
+        padding-bottom: 90px !important;
+    }
+}
